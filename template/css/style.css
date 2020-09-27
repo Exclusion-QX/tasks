@@ -1,0 +1,330 @@
+html,
+body,
+.view{
+	height: 100%;
+}
+
+.carousel{
+	height: 100%;
+}
+
+.carousel .carousel-inner{
+	height: 100%;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active{
+	height: 100%;
+}
+
+@media (max-width: 776px){
+	.carousel{
+		height: 100%;
+	}
+}
+
+.page-footer{
+	background-color: #181818;;
+}
+
+.header-color{ 
+	background-color: #181818;;
+}
+
+.form-signin {
+	max-width: 400px;
+	padding: 15px;
+	margin: 0 auto;
+	padding-top: 60px;
+	padding-bottom: 120px;
+}
+
+.form-signin input {
+	padding-bottom: 10px;
+}
+
+.form-signin a {
+	margin: 0;
+}
+
+
+/* header {
+	height: 20px;
+} */
+
+  	html,
+	body,
+	.carousel
+	{
+		height: 100%;
+	}
+	@media (max-width: 740px){
+		html,
+		body,
+		header,
+		.carousel
+		{
+			height: 100vh;
+		}
+	@media (min-width: 800px) and (max-width: 850px) {
+		html,
+		body,
+		header,
+		.carousel
+		{
+			height: 100vh;
+		}
+	} 
+}
+
+.content {
+	min-height: 500px;
+}
+
+.cart-empty {
+	padding: 200px 0 0 0;
+	text-align: center;
+	margin: 0 auto;
+	color: #9c9c9c;
+}
+
+.out-header {
+	padding-top: 100px;
+}
+
+.card hr {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.card h4 {
+	color: #949494 !important;
+}
+
+.cart-desc {
+	padding: 0.4rem;
+	max-height: 250px;
+	
+}
+
+.cart-text {
+	border-right: 1px solid #dddedf; 
+}
+
+.cart-text p {
+	text-align: left;
+	padding: 0 10px 25px 10px;
+}
+
+.price {
+	padding: 30px 15px 8px 0;
+}
+
+.button-buy {
+	padding-right: 15px;
+}
+
+.block-buy button,
+.clear-cart button {
+	background-color: Transparent;
+	background-repeat:no-repeat;
+	border: none;
+	cursor:pointer;
+	overflow: hidden;
+}
+
+
+.number-panel p {
+
+	text-align: left;
+	padding: 5px 0 0 0;
+	margin-bottom: 0px;
+}
+
+.act-all{
+	padding: 0.5em;
+}
+
+.act-all button{
+	
+}
+
+.payment-all,
+.num-all-product,
+.clear-cart {
+	padding: 15px 0 0 0;
+}
+
+.num-all-product {
+	
+}
+
+.clear-cart {
+
+}
+
+
+#nextNav{ 
+  text-align: center;
+}
+#top_menu{
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  padding-top: 8px;
+}
+#top_menu > li{
+  display: inline-block;  
+  position: relative;
+}
+
+#top_menu li ul {
+	z-index: 10000;
+}
+
+#top_menu > li > a{
+  display: inline-block;
+  padding: 10px 20px; 
+  color: inherit;
+  text-decoration: none; 
+  transition: background-color 0.25s, color 0.15s;
+  text-transform: uppercase;
+  color: #fff;
+}
+#top_menu > li > a:hover{
+  color: white;
+  background: #58647f; 
+}
+#top_menu > li:hover > ul a{
+  opacity: 1;
+}
+#top_menu > li:hover > ul li{
+  height: 40px;
+  opacity: 1;
+}
+.inner_menu{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  white-space: nowrap;
+  background-color: #ededed;
+}
+.inner_menu > li{
+  height: 0;
+  opacity: 0;
+  transition: height 0.3s, opacity 0.4s;
+}
+.inner_menu > li > a{
+  width: 100%;
+  display: inline-block;
+  padding: 10px 20px; 
+  color: inherit;
+  text-decoration: none; 
+  height: inherit;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.4s, opacity 0.5s;
+}
+.inner_menu > li > a:hover{
+  color: white;
+  background-color: #a3c2e3; 
+}
+
+.button-buy-product {
+	padding: 10px 0 0 0;
+
+}
+
+.button-buy-product button{
+	float: left;
+	margin: 0px;
+	width: 100%;
+}
+
+.row-correction {
+	margin-left: 0px;
+	margin-right: 0px;
+
+}
+
+/*Реклама-Баннер*/
+
+.banners h1, h2{
+	text-align: center;
+}
+
+.banners-low {
+	padding: 40px 0 40px 0;
+}
+
+.banner-image {
+	padding: 0px;
+	width: 100%;
+
+}
+
+.banner-image div {
+ 	height: 300px;
+  	width: 100%;
+  	margin: 0 auto;
+  	box-shadow: 1px 5px 10px -5px black;
+}
+
+.banner-image a {
+  display: none;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Segoe UI';
+  line-height: 300px;
+  text-align: center;
+  color: #fff;
+  animation: fade .5s linear forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.banner-image div:hover a {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.banner-high div {
+	height: 400px;
+}
+
+.banner-high a {
+	 line-height: 400px;
+}
+
+.comment-form {
+	padding-top: 10px;
+}
+
+.comments span {
+	font-weight: 500;
+	font-size: 10pt;
+}
+
+.comments p {
+	padding-top: 5px;
+}
+
+.comment-date {
+	color: #989898;
+}
+
+
+
+

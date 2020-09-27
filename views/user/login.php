@@ -13,7 +13,7 @@
                 <?php endif; ?>
 
                 <h2>Вход</h2>
-                <input class="form-control mb-3" type="text" name="email" placeholder="E-mail"/>
+                <input class="form-control mb-3" type="text" name="username" placeholder="Имя"/>
                 <input class="form-control mb-3" type="password" name="password" placeholder="Пароль"/>
                 <input class="btn btn-lg btn-dark btn-block waves-effect waves-light m-0" type="submit" name="submit"
                        class="btn btn-default" value="Вход"/>

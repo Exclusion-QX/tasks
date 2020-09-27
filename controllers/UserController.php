@@ -48,26 +48,26 @@ class UserController
 
     public function actionLogin()
     {
-        $email = '';
+        $username = '';
         $password = '';
 
         if (isset($_POST['submit'])) {
-            $email = $_POST['email'];
+            $username = $_POST['username'];
             $password = $_POST['password'];
 
             $errors = false;
 
             // Валидация полей
-            if (!User::checkEmail($email)) {
-                $errors[] = 'Неправильный email';
+            if (!User::checkName($username)) {
+                $errors[] = 'Имя не должно быть короче 2-х символов';
             }
             if (!User::checkPassword($password)) {
                 $errors[] = 'Пароль не должен быть короче 6-ти символов';
             }
 
             // Проверяем существует ли пользователь
-            $userId = User::checkUserData($email, $password);
-            $userParent = User::checkUserParent($email, $password);
+            $userId = User::checkUserData($username, $password);
+            $userParent = User::checkUserParent($username, $password);
 
             if ($userId == false) {
                 // Если данные неправильные - показываем ошибку

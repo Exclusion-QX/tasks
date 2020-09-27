@@ -33,14 +33,14 @@ class User
      * @param string $password
      * @return mixed : ingeger user id or false
      */
-    public static function checkUserData($email, $password)
+    public static function checkUserData($username, $password)
     {
         $db = Db::getConnection();
 
-        $sql = 'SELECT * FROM user WHERE email = :email AND password = :password';
+        $sql = 'SELECT * FROM user WHERE username = :username AND password = :password';
 
         $result = $db->prepare($sql);
-        $result->bindParam(':email', $email, PDO::PARAM_INT);
+        $result->bindParam(':username', $username, PDO::PARAM_INT);
         $result->bindParam(':password', $password, PDO::PARAM_INT);
         $result->execute();
 
@@ -57,14 +57,14 @@ class User
      * @param $password
      * @return false|mixed
      */
-    public static function checkUserParent($email, $password)
+    public static function checkUserParent($username, $password)
     {
         $db = Db::getConnection();
 
-        $sql = 'SELECT parent FROM user WHERE email = :email AND password = :password';
+        $sql = 'SELECT parent FROM user WHERE username = :username AND password = :password';
 
         $result = $db->prepare($sql);
-        $result->bindParam(':email', $email, PDO::PARAM_INT);
+        $result->bindParam(':username', $username, PDO::PARAM_INT);
         $result->bindParam(':password', $password, PDO::PARAM_INT);
         $result->execute();
 
@@ -114,7 +114,7 @@ class User
      */
     public static function checkPassword($password)
     {
-        if (strlen($password) >= 6) {
+        if (strlen($password) >= 3) {
             return true;
         }
         return false;
